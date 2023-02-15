@@ -105,7 +105,13 @@ echo -e "\n"
 echo "command: python evaluate.py '(add (add 1 (multiply 3 4) ) (add (add 1 (multiply 3 4) ) 1 ) )"
 python calc.py "(add   (add 1    (multiply 3   4  )     )   (add   (add 1   (multiply 53 4)   )  1  )                 )  " 
 # sleep 1 
-echo "correct solution 347"
+echo "correct solution 227"
+echo -e "\n"
+
+echo "command: python evaluate.py '                                '"
+python calc.py "                     " 
+# sleep 1 
+echo "correct solution Exception"
 echo -e "\n"
 
 
